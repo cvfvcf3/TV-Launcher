@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_launcher">
+
+    <ImageView
+        android:id="@+id/wifiIcon"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="24dp"
+        android:src="@drawable/ic_wifi" />
+
+    <LinearLayout
+        android:id="@+id/sidebar"
+        android:layout_width="220dp"
+        android:layout_height="380dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:background="@drawable/sidebar_bg"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/menuHome"
+            style="@style/MenuItem"
+            android:text="⦿  Home" />
+        <TextView
+            android:id="@+id/menuApps"
+            style="@style/MenuItem"
+            android:text="▦  Apps" />
+        <TextView
+            android:id="@+id/menuSearch"
+            style="@style/MenuItem"
+            android:text="🔍  Search" />
+        <TextView
+            android:id="@+id/menuInput"
+            style="@style/MenuItem"
+            android:text="⇥  Input Source" />
+        <TextView
+            android:id="@+id/menuSettings"
+            style="@style/MenuItem"
+            android:text="⚙  Settings" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-40dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/clockText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:18 PM"
+            android:textColor="#FFFFFF"
+            android:textSize="48sp"
+            android:fontFamily="sans-serif-light"
+            android:shadowColor="#CC000000"
+            android:shadowDx="0" android:shadowDy="3" android:shadowRadius="10" />
+
+        <TextView
+            android:id="@+id/dateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Tue, 14 July 2026"
+            android:textColor="#D8D8D8"
+            android:textSize="16sp"
+            android:shadowColor="#CC000000"
+            android:shadowDx="0" android:shadowDy="2" android:shadowRadius="8" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/appDock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="280dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/appdock_bg"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp" />
+
+</RelativeLayout>
